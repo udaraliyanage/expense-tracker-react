@@ -1,4 +1,4 @@
-import ExpensePanel from './components/ExpensePanel';
+import ExpensePanel from './components/Expenses/ExpensePanel';
 
 function App() {
 
