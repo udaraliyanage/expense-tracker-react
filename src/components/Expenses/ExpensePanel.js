@@ -6,6 +6,7 @@ function ExpensePanel(props) {
     var expenseItems = props.items.map(expense =>
         (
             <ExpenseItem
+                key={expense.id}
                 title={expense.description}
                 date={expense.date}
                 amount={expense.amount}

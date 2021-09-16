@@ -8,27 +8,32 @@ function App() {
         {
             description: 'Singleton',
             date: new Date(2021, 8, 22),
-            amount: 200
+            amount: 200,
+            id : 1
         },
         {
             description: 'Bite',
             date: new Date(2021, 8, 5),
-            amount: 20
+            amount: 20,
+            id : 2
         },
         {
             description: 'Cab',
             date: new Date(2021, 8, 8),
-            amount: 14
+            amount: 14,
+            id : 3
         },
         {
             description: 'Icecube',
             date: new Date(2021, 8, 14),
-            amount: 2
+            amount: 2,
+            id : 4
         },
         {
             description: 'Ciga',
             date: new Date(2021, 8, 14),
-            amount: 14
+            amount: 14,
+            id : 5
         }
     ]
 
