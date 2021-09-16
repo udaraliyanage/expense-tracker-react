@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 
 function App() {
 
-    let expenses = [
+    let initialExpenses = [
         {
             description: 'Singleton',
             date: new Date(2021, 8, 22),
@@ -32,23 +32,20 @@ function App() {
         }
     ]
 
-    const [items, setItems] = useState(expenses)
+    const [expenses, setExpenses] = useState(initialExpenses)
     const addExpenseHandler = expense => {
-        console.log("#Main App###")
-        console.log(expense)
         const e = {
             description: 'New Item',
             date: new Date(2021, 8, 22),
             amount: 200
         }
-
-        setItems([...items, e])
+        setExpenses([expense,...expenses])
     };
 
     return (
         <div>
             <NewExpense onAddExpense={addExpenseHandler}/>
-            <ExpensePanel items={items}/>
+            <ExpensePanel items={expenses}/>
         </div>
     );
 }
