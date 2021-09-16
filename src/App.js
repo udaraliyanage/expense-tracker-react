@@ -34,12 +34,9 @@ function App() {
 
     const [expenses, setExpenses] = useState(initialExpenses)
     const addExpenseHandler = expense => {
-        const e = {
-            description: 'New Item',
-            date: new Date(2021, 8, 22),
-            amount: 200
-        }
-        setExpenses([expense,...expenses])
+        setExpenses(previousExpenses => {
+            return [expense,...previousExpenses]
+        })
     };
 
     return (
