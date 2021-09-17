@@ -25,13 +25,13 @@ function App() {
         },
         {
             description: 'Icecube',
-            date: new Date(2021, 8, 14),
+            date: new Date(2020, 8, 14),
             amount: 2,
             id : 4
         },
         {
             description: 'Ciga',
-            date: new Date(2021, 8, 14),
+            date: new Date(2019, 8, 14),
             amount: 14,
             id : 5
         }
