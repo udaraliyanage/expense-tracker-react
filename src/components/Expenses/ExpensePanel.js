@@ -6,13 +6,13 @@ import {useState} from "react";
 
 function ExpensePanel(props) {
 
-    const [selectedYear, setFilteredYear] = useState('2020')
+    const [selectedYear, setFilteredYear] = useState(2020)
     const filterChangeHandler = (selectedYear) => {
         setFilteredYear(selectedYear);
     };
 
     let expenseItems = props.items
-        .filter(i => i.date.getFullYear().toString() === selectedYear)
+        .filter(i => i.date.getFullYear() === selectedYear)
         .map(expense =>
             (
                 <ExpenseItem
