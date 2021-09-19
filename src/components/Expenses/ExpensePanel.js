@@ -23,6 +23,10 @@ function ExpensePanel(props) {
                 />
             )
         );
+
+    if (expenseItems.length === 0){
+        expenseItems = <p>No Expenses Found</p>
+    }
     return (
         <Card className="expenses">
             <ExpensesFilter selected={selectedYear} onChangeFilter={filterChangeHandler}/>
