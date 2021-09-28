@@ -7,7 +7,7 @@ function App() {
     let initialExpenses = [
         {
             description: 'Singleton',
-            date: new Date(2021, 8, 22),
+            date: new Date(2020, 7, 22),
             amount: 200,
             id : 1
         },
@@ -19,14 +19,20 @@ function App() {
         },
         {
             description: 'Cab',
-            date: new Date(2021, 8, 8),
+            date: new Date(2021, 3, 8),
             amount: 14,
             id : 3
         },
         {
             description: 'Icecube',
             date: new Date(2020, 8, 14),
-            amount: 2,
+            amount: 20,
+            id : 4
+        },
+        {
+            description: 'Cab',
+            date: new Date(2020, 8, 10),
+            amount: 20,
             id : 4
         },
         {
