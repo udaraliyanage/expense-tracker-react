@@ -3,6 +3,7 @@ import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
 import {useState} from "react";
+import ExpenseChart from "./ExpenseChart";
 
 function ExpensePanel(props) {
 
@@ -10,6 +11,8 @@ function ExpensePanel(props) {
     const filterChangeHandler = (selectedYear) => {
         setFilteredYear(selectedYear);
     };
+
+    let filteredExpenses = props.items.filter(i => i.date.getFullYear() === selectedYear);
 
     let expenseItems = props.items
         .filter(i => i.date.getFullYear() === selectedYear)
@@ -30,7 +33,9 @@ function ExpensePanel(props) {
     return (
         <Card className="expenses">
             <ExpensesFilter selected={selectedYear} onChangeFilter={filterChangeHandler}/>
+            <ExpenseChart expenses={filteredExpenses}/>
             {expenseItems}
+
         </Card>
     )
 }
