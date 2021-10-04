@@ -33,13 +33,13 @@ function App() {
             description: 'Cab',
             date: new Date(2020, 8, 10),
             amount: 20,
-            id : 4
+            id : 5
         },
         {
             description: 'Ciga',
             date: new Date(2019, 8, 14),
             amount: 14,
-            id : 5
+            id : 6
         }
     ]
 
